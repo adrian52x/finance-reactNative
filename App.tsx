@@ -4,6 +4,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import CategoryScreen from './screens/CategoryScreen';
+import React from 'react';
 
 const Stack = createStackNavigator();
 
