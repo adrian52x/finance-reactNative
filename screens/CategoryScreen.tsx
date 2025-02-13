@@ -13,7 +13,7 @@ const CategoryScreen = () => {
 
     const fetchCategories = async () => {
         try {
-        const response = await fetch('http://localhost:3000/api/categories'); // Replace with your backend URL
+        const response = await fetch('http://10.0.2.2:3000/api/categories'); // Replace with your backend URL
         const data = await response.json();
         setCategories(data);
         } catch (error) {
@@ -24,7 +24,7 @@ const CategoryScreen = () => {
     const handleAddCategory = async () => {
         if (newCategoryName.trim()) {
         try {
-            const response = await fetch('http://localhost:3000/api/categories', {
+            const response = await fetch('http://10.0.2.2:3000/api/categories', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
